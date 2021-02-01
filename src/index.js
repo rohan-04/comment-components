@@ -1,23 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import faker from "faker";
+import CommentDetail from "./CommentDetail";
 
 const App = () => {
     return (
         <div className="ui container comments">
-            <div className="comment">
-                <a href="/" className="avatar">
-                    <img alt="avatar" src={faker.image.image()} />
-                </a>
-                <div className="content">
-                    <a href="/" className="author">Sam</a>
-                    <div className="metadata">
-                        <span className="date">Today at 6:00PM</span>
-                    </div>
-                    <div className="text" >Nice blog post.</div>
+            <CommentDetail name={"Sam"} time={"10:00PM"} content={"Nice blog post."} image={faker.image.image()} />
+            <CommentDetail name={"XOXO"} time={"11:00PM"} content={"bad blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
+            <CommentDetail name={"Sean"} time={"12:00PM"} content={"good blog post."} image={faker.image.image()} />
 
-                </div>
-            </div>
         </div>
     );
 }
