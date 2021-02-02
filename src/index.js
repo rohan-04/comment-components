@@ -9,6 +9,13 @@ const App = () => {
         <div className="ui container comments">
             {/* component is pass as props to another component */}
             <ApprovalCard>
+                <div>
+                    <h4>Warning!</h4>
+                    Are you sure?
+                </div>
+            </ApprovalCard>
+
+            <ApprovalCard>
                 <CommentDetail
                     name="Sam"
                     time={"10:00PM"}
@@ -16,23 +23,22 @@ const App = () => {
                     image={faker.image.image()} />
             </ApprovalCard>
 
-            <CommentDetail
-                name="Sam"
-                time={"10:00PM"}
-                content={"Nice blog post."}
-                image={faker.image.image()} />
+            <ApprovalCard>
+                <CommentDetail
+                    name="Cloud9"
+                    time={"10:00PM"}
+                    content={"Nice blog post."}
+                    image={faker.image.image()} />
+            </ApprovalCard>
 
-            <CommentDetail
-                name={"XOXO"}
-                time={"11:00PM"}
-                content={"bad blog post."}
-                image={faker.image.image()} />
+            <ApprovalCard>
+                <CommentDetail
+                    name={"XOXO"}
+                    time={"11:00PM"}
+                    content={"bad blog post."}
+                    image={faker.image.image()} />
 
-            <CommentDetail
-                name={"LOLO"}
-                time={"1:00AM"}
-                content={"Nice idea for blog post."}
-                image={faker.image.image()} />
+            </ApprovalCard>
 
         </div>
     );
